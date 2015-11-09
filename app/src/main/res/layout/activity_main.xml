@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <com.hat.widget.ClearEditText
+        android:id="@+id/clearEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_edittext_background"
+        android:drawableLeft="@drawable/search_bar_icon_normal" 
+        android:layout_marginTop="5dip"
+        android:hint="请输入关键字"
+        />
+    
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        
+        <ListView 
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            ></ListView>
+        <TextView 
+            android:id="@+id/textDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="50dp"
+            android:textSize="30dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="A"
+            android:background="@drawable/show_head_toast_bg"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            />
+        
+        <com.hat.widget.SideBar
+            android:id="@+id/sidebar"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            />
+        
+    </FrameLayout>
+
+</LinearLayout>
